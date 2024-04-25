@@ -72,4 +72,12 @@ public class UserEntity {
         this.credentialsExpired = credentialsExpired;
     }
 
+    public Set<RoleEntity> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Set<RoleEntity> roles) {
+        this.roles = roles;
+    }
+
 }
