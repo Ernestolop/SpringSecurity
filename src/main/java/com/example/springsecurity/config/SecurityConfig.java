@@ -63,25 +63,8 @@ public class SecurityConfig {
 
     @Bean 
     public UserDetailsService userDetailsService() {
-        List<UserDetails> usersList = new ArrayList<>();
 
-        usersList.add(
-            User.withUsername("elopez")
-            .password("1234")
-            .roles("ADMIN")
-            .authorities("READ", "CREATE")
-            .build()
-        );
-
-        usersList.add(
-            User.withUsername("dlopez")
-            .password("1234")
-            .roles("USER")
-            .authorities("READ")
-            .build()
-        );
-
-        return new InMemoryUserDetailsManager(usersList);
+        return null;
     }
 
 } 
